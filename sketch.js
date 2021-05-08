@@ -66,3 +66,10 @@ function draw(){
     //log6.display();
     Slingshot.display();    
 }
+function mouseDragged() {
+    Matter.Body.setPosition(bird.Body, {x:mouseX, y:mouseY});
+    console.log("mouseDragged");
+}
+function mouseReleased() {
+    Slingshot.fly();
+}
